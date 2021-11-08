@@ -1,45 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Skilldrick's JavaScript brainfuck interpreter</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <title>Brainfuck</title>
+
     <link href="css/style.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2017/png/iconmonstr-idea-11.png&r=255&g=148&b=112">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/brainfucker.js"></script>
   </head>
+
+  <meta charset="UTF-8">
+
   <body>
-    <h1>brainfuck</h1>
     <form>
-      <table>
-        <tr>
-          <td><p><label for='code'>Code</label></p></td>
-          <td><input name='code' id='code'></input></td>
-        </tr>
-        <tr>
-          <td><label for='input'>Input</label></td>
-          <td><input name='input' id='input'></input></td>
-        </tr>
-      </table>
-      <p>
-      <input type='submit' value='Run' />
-      </p>
+      <textarea name="code" id="code" placeholder="code"></textarea>
+
+      <div class="input">
+        <label for="input">&gt;</label>
+
+        <input type="input" name="input" id="input" placeholder="input">
+
+        <input type="submit" value="[!]">
+
+        <a id="url">[&amp;]</a>
+
+        <input type="button" id="about" value="[?]">
+
+      </div>
     </form>
 
-    <p id='output'></p>
-
-    <p><a id='url' href='http://skilldrick.co.uk/brainfuck'>This code and input as a URL</a></p>
-
-    <p><a href="https://github.com/skilldrick/brainfuck-js">
-      Fork me on github!</a></p>
-
-
-
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/brainfuck.js"></script>
-    <script>
-      var _gaq=[['_setAccount','UA-3174668-9'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+    <div id="output">
+      <spam class="placeholder">output</spam>
+    </div>
   </body>
 </html>

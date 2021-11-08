@@ -1,19 +1,129 @@
 body {
-  margin: 2em;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  background-color: #171726;
 }
 
-td p {
-  line-height: 20px;
+@font-face{
+  font-family: "JetBrains Mono";
+  src: url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2"),
+       url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf") format("truetype");
 }
 
-td {
-  padding: 5px;
+* {
+  font-feature-settings: "liga" 0;
+  font-variant-ligatures: none;
+  font-family: "JetBrains Mono";
+  font-size: 16px;
 }
 
-#output {
-  width: 400px;
-  height: 200px;
-  padding: 5px;
-  border: 1px solid gray;
-  margin-top: 1em;
+form {
+  width: 100vw;
+}
+
+::placeholder,
+spam.placeholder {
+  opacity: 1;
+  color: #878D96;
+}
+
+input {
+  cursor: pointer;
+}
+
+textarea,
+input[type=input],
+input[type=submit],
+input[type=button] {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+textarea {
+  min-width: calc(100% - 1rem * 2);
+  max-width: calc(100% - 1rem * 2);
+  height: calc(60vh - 1rem * 2);
+  min-height: calc(25vh - 1rem * 2);
+  max-height: calc(75vh - 1rem * 2);
+  margin: 0;
+  padding: 1rem;
+}
+
+div.input {
+  display: flex;
+  color: #6BB8FF;
+  background-color: #000000;
+}
+
+input[type=input],
+input[type=submit],
+a#url,
+input[type=button] {
+  padding: 0.5rem;
+}
+
+label,
+input[type=submit],
+a#url,
+input[type=button] {
+  font-weight: bold;
+  transition: 250ms ease;
+}
+
+input[type=submit]:hover,
+a#url:hover,
+input[type=button]:hover {
+  color: white;
+}
+
+label {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  color: #878D96;
+}
+
+input[type=input] {
+  flex: 1;
+  overflow: auto;
+  color: #6BB8FF;
+}
+
+input[type=submit] {
+  background: none;
+  border: none;
+  color: #98C379;
+}
+
+a#url {
+  text-decoration: none;
+  color: #E799FF;
+}
+
+input[type=button] {
+  color: #FFC387;
+}
+
+div#output {
+  flex: 1;
+  overflow: auto;
+  margin: 0;
+  padding: 1rem;
+}
+
+spam.error {
+  color: #FA7883;
+}
+
+a {
+  text-decoration: underline;
+  color: #8AF5FF;
 }
