@@ -24,21 +24,61 @@ From [brainfuck's Wikipedia page](https://wikiless.org/wiki/Brainfuck):
 
 > *All other characters should be considered comments and ignored.*
 
-<br>
-
-<p align="center"><a href="https://nnbnh.github.io/brainfucker">Try it now</a></p>
+- [Try it now](https://nnbnh.github.io/brainfucker).
+- Examples:
+  - [ReverseFuck](https://nnbnh.github.io/brainfucker/?commands=%3C%3E-+,.][&name=ReverseFuck&page=https://sourceforge.net/projects/reversef&author=Juraj%20Borza&apage=https://esolangs.org/wiki/Juraj_Borza&description=ReverseFuck%20is%20a%20Brainfuck%20modification%20created%20by%20Juraj%20Borza%20in%202006,%20which%20uses%20%22reversed%22%20brainfuck%20operators.%20This%20means%20that%20operator%20+%20acts%20as%20-,%20%3C%20acts%20as%20%3E%20and%20vice%20versa.%20The%20reason%20for%20this%20is%20that%20brainfuck%20may%20be%20too%20easy%20to%20understand%20for%20people,%20as%20+%20increments%20the%20current%20cell%20and%20%3E%20increments%20the%20pointer.%20But%20when%20this%20is%20reversed,%20it%20is%20harder%20to%20make%20sense%20of%20it.)
+  - [Khoai\_\[\]lang](https://nnbnh.github.io/brainfucker/?commands=kha_oi[]&name=Khoai_[]lang&page=https://github.com/NNBnh/brainfucker&author=NNB&apage=https://github.com/NNBnh)
 
 ### ✨ Features
 - Shareable code and input through hyperlink `[&]`.
 - Retro/terminal theme.
 - Minimal design, maximum screen real estate.
 - Featuring:
-  - [Jquery](https://jquery.com/).
+  - [Jquery](https://jquery.com).
   - [Da one color scheme](https://github.com/NNBnh/da-one).
   - [Bmono font](https://github.com/NNBnh/bmono).
 
 ## 🚀 Generate
-`#TODO`
+
+To generate a simple interpreter, just modify the following URL by replacing uppercase words with your desired configuration:
+
+```
+https://nnbnh.github.io/brainfucker/
+?commands=COMMANDS
+&name=LANGUAGE_NAME
+&page=LANGUAGE_URL
+&author=AUTHOR_NAME
+&apage=AUTHOR_URL
+&description=DESCRIPTION
+```
+
+The `COMMANDS` options must contain exactly 8 characters for 8 commands in these order:
+
+1. Move the pointer to the right.
+2. Move the pointer to the left.
+3. Increment the memory cell at the pointer.
+4. Decrement the memory cell at the pointer.
+5. Output the character signified by the cell at the pointer.
+6. Input a character and store it in the cell at the pointer.
+7. Jump past the matching closure if the cell at the pointer is 0.
+8. Jump back to the matching opener if the cell at the pointer is nonzero.
+
+> *Use a [URL encode](https://www.urlencoder.io) if your configuration contains rare characters like `&` or `%`...*
+
+For comparison here is the defaults configuration:
+
+```
+https://nnbnh.github.io/brainfucker/
+?commands=><+-.,[]
+&name=Brainfuck
+&page=https://esolangs.org/wiki/Brainfuck
+&author=Urban Müller
+&apage=https://esolangs.org/wiki/Urban_M%C3%BCller
+&description=Brainfuck is an esoteric programming language created in 1993 notable for its extreme minimalism, the language consists of only eight simple commands, a data pointer and an instruction pointer. While it is fully Turing complete, it is not intended for practical use, but to challenge and amuse programmers. Brainfuck simply requires one to break commands into microscopic steps.
+```
+
+If you want more freedom and control over the interpreter then [generate with template](https://github.com/NNBnh/brainfucker/generate)
+and take a look at [`js/index.js`](https://github.com/NNBnh/brainfucker/blob/main/js/index.js#L3) for configuration.
 
 ## 💌 Credits
 Special thanks to:

@@ -32,7 +32,7 @@ for (let i = 0; i < paramsArray.length; i++) {
 let custom = false;
 
 if (
-  params.commands.length === 8 && [
+  [
     typeof(params.commands   ),
     typeof(params.name       ),
     typeof(params.page       ),
@@ -41,7 +41,9 @@ if (
     typeof(params.description)
   ].includes("string")
 ) {
-  custom = true
+  if (params.commands.length === 8) {
+    custom = true
+  }
 }
 
 if (custom === true) {
@@ -120,12 +122,12 @@ $(document).ready(function () {
           langClose  + " <spam class='grey'>: Jump back to the matching opener if the cell at the pointer is nonzero.</spam>"
         ].join("<br>"),
 
-        "<a href='" + langPage + "'>" + langName + "</a><br> by <a href='" + authorPage + "'>" + authorName + "</a>",
+        "<a href='" + langPage + "' target='_blank'>" + langName + "</a><br> by <a href='" + authorPage + "' target='_blank'>" + authorName + "</a>",
 
         description,
 
-        "This interpreter was generated using <a href='https://github.com/NNBnh/brainfucker'>Brainfucker</a> by <a href='https://github.com/NNBnh'>NNB</a>.",
-        "Which is a fork of <a href='https://github.com/skilldrick/brainfuck-js'>brainfuck-js</a> by <a href='https://github.com/skilldrick'>Nick Morgan</a>."
+        "This interpreter was generated using <a href='https://github.com/NNBnh/brainfucker' target='_blank'>Brainfucker</a> by <a href='https://github.com/NNBnh' target='_blank'>NNB</a>.",
+        "Which is a fork of <a href='https://github.com/skilldrick/brainfuck-js' target='_blank'>brainfuck-js</a> by <a href='https://github.com/skilldrick' target='_blank'>Nick Morgan</a>."
       ].join("<br><br>")
     );
   });
