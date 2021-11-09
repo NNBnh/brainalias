@@ -1,13 +1,13 @@
 "use strict";
 
-const langCharRight  = typeof(langRight)  === 'string' ? langRight  : ">";
-const langCharLeft   = typeof(langLeft)   === 'string' ? langLeft   : "<";
-const langCharIncmnt = typeof(langIncmnt) === 'string' ? langIncmnt : "+";
-const langCharDecmnt = typeof(langDecmnt) === 'string' ? langDecmnt : "-";
-const langCharOutput = typeof(langOutput) === 'string' ? langOutput : ".";
-const langCharInput  = typeof(langInput)  === 'string' ? langInput  : ",";
-const langCharOpen   = typeof(langOpen)   === 'string' ? langOpen   : "[";
-const langCharClose  = typeof(langClose)  === 'string' ? langClose  : "]";
+const langCharRight  = typeof(langRight)  === "string" ? langRight  : ">";
+const langCharLeft   = typeof(langLeft)   === "string" ? langLeft   : "<";
+const langCharIncmnt = typeof(langIncmnt) === "string" ? langIncmnt : "+";
+const langCharDecmnt = typeof(langDecmnt) === "string" ? langDecmnt : "-";
+const langCharOutput = typeof(langOutput) === "string" ? langOutput : ".";
+const langCharInput  = typeof(langInput)  === "string" ? langInput  : ",";
+const langCharOpen   = typeof(langOpen)   === "string" ? langOpen   : "[";
+const langCharClose  = typeof(langClose)  === "string" ? langClose  : "]";
 
 const parse = (function () {
   let input;

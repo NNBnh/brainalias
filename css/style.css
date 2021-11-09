@@ -9,16 +9,14 @@ body {
 }
 
 @font-face{
-  font-family: "JetBrains Mono";
-  src: url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2"),
-       url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf") format("truetype");
+  font-family: "Bmono";
+  src: url("https://raw.githubusercontent.com/NNBnh/bmono/main/dist/bmono/woff2/bmono-regular.woff2") format("woff2"),
+       url("https://raw.githubusercontent.com/NNBnh/bmono/main/dist/bmono/ttf/bmono-regular.ttf") format("truetype");
 }
 
 * {
-  font-feature-settings: "liga" 0;
-  font-variant-ligatures: none;
-  font-family: "JetBrains Mono";
-  font-size: 16px;
+  font-family: "Bmono";
+  font-size: 0.4cm;
 }
 
 form {
@@ -26,7 +24,7 @@ form {
 }
 
 ::placeholder,
-spam.placeholder {
+spam.grey {
   opacity: 1;
   color: #878D96;
 }
@@ -57,6 +55,8 @@ textarea {
   max-height: calc(75vh - 1rem * 2);
   margin: 0;
   padding: 1rem;
+  font-feature-settings: "liga" 0;
+  font-variant-ligatures: none;
 }
 
 div.input {
@@ -65,6 +65,7 @@ div.input {
   background-color: #000000;
 }
 
+label,
 input[type=input],
 input[type=submit],
 a#url,
@@ -87,7 +88,7 @@ input[type=button]:hover {
 }
 
 label {
-  padding: 0.5rem 0 0.5rem 0.5rem;
+  padding-right: 0;
   color: #878D96;
 }
 

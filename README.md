@@ -37,7 +37,7 @@ From [brainfuck's Wikipedia page](https://wikiless.org/wiki/Brainfuck):
   - [Da one color scheme](https://github.com/NNBnh/da-one).
   - [Bmono font](https://github.com/NNBnh/bmono).
 
-## 🚀 Setup
+## 🚀 Generate
 `#TODO`
 
 ## 💌 Credits
