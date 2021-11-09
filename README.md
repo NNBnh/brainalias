@@ -28,6 +28,7 @@ From [brainfuck's Wikipedia page](https://wikiless.org/wiki/Brainfuck):
 - Examples:
   - [`ReverseFuck`](https://nnbnh.github.io/brainfucker/?commands=%3C%3E-+,.][&name=ReverseFuck&page=https://sourceforge.net/projects/reversef&author=Juraj%20Borza&apage=https://esolangs.org/wiki/Juraj_Borza&description=ReverseFuck%20is%20a%20Brainfuck%20modification%20created%20by%20Juraj%20Borza%20in%202006,%20which%20uses%20%22reversed%22%20brainfuck%20operators.%20This%20means%20that%20operator%20+%20acts%20as%20-,%20%3C%20acts%20as%20%3E%20and%20vice%20versa.%20The%20reason%20for%20this%20is%20that%20brainfuck%20may%20be%20too%20easy%20to%20understand%20for%20people,%20as%20+%20increments%20the%20current%20cell%20and%20%3E%20increments%20the%20pointer.%20But%20when%20this%20is%20reversed,%20it%20is%20harder%20to%20make%20sense%20of%20it.)
   - [`Khoai_[]lang`](https://nnbnh.github.io/brainfucker/?commands=kha_oi[]&name=Khoai_[]lang&page=https://github.com/NNBnh/brainfucker&author=NNB&apage=https://github.com/NNBnh)
+  - [And more...](https://github.com/NNBnh/brainfucker/discussions/3)
 
 ### ✨ Features
 - Shareable code and input through hyperlink `[&]`.
