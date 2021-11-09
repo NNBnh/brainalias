@@ -1,7 +1,7 @@
 <h1 align="center">Brainfucker</h1>
 <p align="center">A interpreter generator for your brainfuck-like language</p>
 <p align="center"><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2017/png/iconmonstr-idea-11.png&r=255&g=148&b=112"></p>
-<p align="center"><a href="https://github.com/NNBnh/brainfucker/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-unlicense-%23B3684F.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="License: GPL-3.0"></a> <!--<a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23B3684F.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a>--></p>
+<p align="center"><a href="https://github.com/NNBnh/brainfucker/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-unlicense-%23B3684F.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="License: GPL-3.0"></a> <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23B3684F.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a></p>
 
 ## 💡 About
 **Brainfucker** is an online [brainfuck](https://esolangs.org/wiki/Brainfuck) interpreter and also an online-interpreter-generator for your brainfuck-like language.
@@ -26,8 +26,8 @@ From [brainfuck's Wikipedia page](https://wikiless.org/wiki/Brainfuck):
 
 - [Try it now](https://nnbnh.github.io/brainfucker).
 - Examples:
-  - [ReverseFuck](https://nnbnh.github.io/brainfucker/?commands=%3C%3E-+,.][&name=ReverseFuck&page=https://sourceforge.net/projects/reversef&author=Juraj%20Borza&apage=https://esolangs.org/wiki/Juraj_Borza&description=ReverseFuck%20is%20a%20Brainfuck%20modification%20created%20by%20Juraj%20Borza%20in%202006,%20which%20uses%20%22reversed%22%20brainfuck%20operators.%20This%20means%20that%20operator%20+%20acts%20as%20-,%20%3C%20acts%20as%20%3E%20and%20vice%20versa.%20The%20reason%20for%20this%20is%20that%20brainfuck%20may%20be%20too%20easy%20to%20understand%20for%20people,%20as%20+%20increments%20the%20current%20cell%20and%20%3E%20increments%20the%20pointer.%20But%20when%20this%20is%20reversed,%20it%20is%20harder%20to%20make%20sense%20of%20it.)
-  - [Khoai\_\[\]lang](https://nnbnh.github.io/brainfucker/?commands=kha_oi[]&name=Khoai_[]lang&page=https://github.com/NNBnh/brainfucker&author=NNB&apage=https://github.com/NNBnh)
+  - [`ReverseFuck`](https://nnbnh.github.io/brainfucker/?commands=%3C%3E-+,.][&name=ReverseFuck&page=https://sourceforge.net/projects/reversef&author=Juraj%20Borza&apage=https://esolangs.org/wiki/Juraj_Borza&description=ReverseFuck%20is%20a%20Brainfuck%20modification%20created%20by%20Juraj%20Borza%20in%202006,%20which%20uses%20%22reversed%22%20brainfuck%20operators.%20This%20means%20that%20operator%20+%20acts%20as%20-,%20%3C%20acts%20as%20%3E%20and%20vice%20versa.%20The%20reason%20for%20this%20is%20that%20brainfuck%20may%20be%20too%20easy%20to%20understand%20for%20people,%20as%20+%20increments%20the%20current%20cell%20and%20%3E%20increments%20the%20pointer.%20But%20when%20this%20is%20reversed,%20it%20is%20harder%20to%20make%20sense%20of%20it.)
+  - [`Khoai_[]lang`](https://nnbnh.github.io/brainfucker/?commands=kha_oi[]&name=Khoai_[]lang&page=https://github.com/NNBnh/brainfucker&author=NNB&apage=https://github.com/NNBnh)
 
 ### ✨ Features
 - Shareable code and input through hyperlink `[&]`.
@@ -77,7 +77,7 @@ https://nnbnh.github.io/brainfucker/
 &description=Brainfuck is an esoteric programming language created in 1993 notable for its extreme minimalism, the language consists of only eight simple commands, a data pointer and an instruction pointer. While it is fully Turing complete, it is not intended for practical use, but to challenge and amuse programmers. Brainfuck simply requires one to break commands into microscopic steps.
 ```
 
-If you want more freedom and control over the interpreter then [generate with template](https://github.com/NNBnh/brainfucker/generate)
+If you want more freedom and control over the interpreter then [generate it from the template](https://github.com/NNBnh/brainfucker/generate)
 and take a look at [`js/index.js`](https://github.com/NNBnh/brainfucker/blob/main/js/index.js#L3) for configuration.
 
 ## 💌 Credits
