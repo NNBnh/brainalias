@@ -126,7 +126,7 @@ $(document).ready(function () {
 
         description,
 
-        "This interpreter was generated using <a href='https://github.com/NNBnh/brainfucker' target='_blank'>Brainfucker</a> by <a href='https://github.com/NNBnh' target='_blank'>NNB</a>.",
+        "This interpreter was generated using <a href='https://github.com/NNBnh/brainalias' target='_blank'>BrainAlias</a> by <a href='https://github.com/NNBnh' target='_blank'>NNB</a>.",
         "Which is a fork of <a href='https://github.com/skilldrick/brainfuck-js' target='_blank'>brainfuck-js</a> by <a href='https://github.com/skilldrick' target='_blank'>Nick Morgan</a>."
       ].join("<br><br>")
     );
