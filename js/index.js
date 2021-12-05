@@ -21,13 +21,7 @@ let description = "Brainfuck is an esoteric programming language created in 1993
 
 /* -------------------------------------------------------------------------- */
 
-const queryString = window.location.search.substring(1);
-const paramsArray = queryString.split("&");
-let params = {};
-for (let i = 0; i < paramsArray.length; i++) {
-  let param = paramsArray[i].split("=");
-  params[param[0]] = decodeURIComponent(param[1]);
-}
+let params = Object.fromEntries(new URLSearchParams(window.location.search).entries());
 
 let custom = false;
 
@@ -65,12 +59,12 @@ if (custom === true) {
   description = typeof(params.description) === "string" ? params.description : langName + " is a brainfuck-like esoteric programming language.";
 }
 
-$(document).ready(function () {
-  $("title").text(langName);
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementsByTagName("title")[0].innerText = langName;
 
   function makeUrl() {
-    let code = $("#code").val() || "";
-    let input = $("#input").val() || "";
+    let code = document.getElementById("code").value || "";
+    let input = document.getElementById("input").value || "";
 
     let url = window.location.href.split("?")[0];
 
@@ -86,30 +80,28 @@ $(document).ready(function () {
       url += typeof(params.description) === "string" ? "&description=" + encodeURIComponent(params.description) : "";
     }
 
-    $("#url").attr("href", url);
+    document.getElementById("url").setAttribute("href", url);
   }
 
-  $("#code").val(params.code);
-  $("#input").val(params.input);
+  document.getElementById("code").value = params.code ?? "";
+  document.getElementById("input").value = params.input ?? "";
   makeUrl();
+  document.getElementById("code").addEventListener("change", makeUrl);
+  document.getElementById("input").addEventListener("change", makeUrl);
 
-  $("#code, #input").change(function () {
-    makeUrl();
-  });
-
-  $("form").submit(function (e) {
+  document.getElementsByTagName("form")[0].addEventListener("submit", function (e) {
     e.preventDefault();
-    let code = $("#code").val();
-    let input = $("#input").val();
+    let code = document.getElementById("code").value;
+    let input = document.getElementById("input").value;
     try {
-      $("#output").text(run(code, input));
+      document.getElementById("output").innerText = run(code, input);
     } catch (e) {
-      $("#output").html("<spam class='error'>" + e + "</spam>");
+      document.getElementById("output").innerHTML = "<spam class='error'>" + e + "</spam>";
     }
   });
 
-  $("#about").click(function () {
-    $("#output").html(
+  document.getElementById("about").addEventListener("click", function () {
+    document.getElementById("output").innerHTML = 
       [
         [
           langRight  + " <spam class='grey'>: Move the pointer to the right.</spam>",
@@ -129,6 +121,6 @@ $(document).ready(function () {
         "This interpreter was generated using <a href='https://github.com/NNBnh/brainalias' target='_blank'>BrainAlias</a> by <a href='https://github.com/NNBnh' target='_blank'>NNB</a>.",
         "Which is a fork of <a href='https://github.com/skilldrick/brainfuck-js' target='_blank'>brainfuck-js</a> by <a href='https://github.com/skilldrick' target='_blank'>Nick Morgan</a>."
       ].join("<br><br>")
-    );
+    ;
   });
 });
