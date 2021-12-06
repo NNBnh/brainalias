@@ -84,7 +84,8 @@ and take a look at [`js/index.js`](https://github.com/NNBnh/brainalias/blob/main
 Special thanks to:
 - [**Brainfuck**](https://esolangs.org/wiki/Brainfuck) by [Urban Müller](https://esolangs.org/wiki/Urban_M%C3%BCller)
 - [**Brainfuck-js**](https://github.com/skilldrick/brainfuck-js) by [Nick Morgan](https://github.com/skilldrick)
-- [**The brain icon**](https://iconmonstr.com/idea-11-svg) from [Iconmonstr](https://iconmonstr.com/)
+- [**The brain icon**](https://iconmonstr.com/idea-11-svg) from [Iconmonstr](https://iconmonstr.com)
+- And [**Kazoku**](https://github.com/K4zoku) for [free this project from Jquery](https://github.com/NNBnh/brainalias/pull/4)
 
 <br><br><br><br>
 
