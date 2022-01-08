@@ -1,9 +1,10 @@
 <h1 align="center">BrainAlias</h1>
 <p align="center">A interpreter generator for your brainfuck-aliases language</p>
 <p align="center"><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2017/png/iconmonstr-idea-11.png&r=255&g=148&b=112"></p>
-<p align="center"><a href="https://github.com/NNBnh/brainalias/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-unlicense-%23B3684F.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="License: GPL-3.0"></a> <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23B3684F.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a></p>
+<p align="center"><a href="https://github.com/NNBnh/brainalias/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/brainalias?labelColor=585858&color=B3684F&style=for-the-badge" alt="License: Unlicense"></a> <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23B3684F.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a></p>
 
 ## 💡 About
+
 **BrainAlias** is an online [brainfuck](https://esolangs.org/wiki/Brainfuck) interpreter and also an online-interpreter-generator for your brainfuck-aliases language.
 
 From [brainfuck's Wikipedia page](https://wikiless.org/wiki/Brainfuck):
@@ -31,6 +32,7 @@ From [brainfuck's Wikipedia page](https://wikiless.org/wiki/Brainfuck):
   - [And more...](https://github.com/NNBnh/brainalias/discussions/3)
 
 ### ✨ Features
+
 - Shareable code and input through hyperlink `[&]`.
 - Retro/terminal theme.
 - Minimal design, maximum screen real estate.
@@ -81,6 +83,7 @@ If you want more freedom and control over the interpreter then [generate it from
 and take a look at [`js/index.js`](https://github.com/NNBnh/brainalias/blob/main/js/index.js#L3) for configuration.
 
 ## 💌 Credits
+
 Special thanks to:
 - [**Brainfuck**](https://esolangs.org/wiki/Brainfuck) by [Urban Müller](https://esolangs.org/wiki/Urban_M%C3%BCller)
 - [**Brainfuck-js**](https://github.com/skilldrick/brainfuck-js) by [Nick Morgan](https://github.com/skilldrick)
