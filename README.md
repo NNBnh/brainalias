@@ -1,7 +1,9 @@
 <h1 align="center">BrainAlias</h1>
 <p align="center">A interpreter generator for your brainfuck-aliases language</p>
-<p align="center"><img src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2017/png/iconmonstr-idea-11.png&r=255&g=148&b=112"></p>
-<p align="center"><a href="https://github.com/NNBnh/brainalias/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/brainalias?labelColor=585858&color=B3684F&style=for-the-badge" alt="License: Unlicense"></a> <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23B3684F.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a></p>
+<p align="center">
+  <a href="https://github.com/NNBnh/brainalias/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/brainalias?labelColor=585858&color=B3684F&style=for-the-badge" alt="License: Unlicense"></a>
+  <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23B3684F.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a>
+</p>
 
 ## 💡 About
 
@@ -23,7 +25,7 @@ From [brainfuck's Wikipedia page](https://wikiless.org/wiki/Brainfuck):
 | `[`     | Jump past the matching closure if the cell at the pointer is 0         |
 | `]`     | Jump back to the matching opener if the cell at the pointer is nonzero |
 
-> *All other characters should be considered comments and ignored.*
+> **Note** All other characters should be considered comments and ignored.
 
 - [Try it now](https://nnbnh.github.io/brainalias).
 - Examples:
@@ -65,7 +67,7 @@ The `COMMANDS` options must contain exactly 8 characters for 8 commands in these
 7. Jump past the matching closure if the cell at the pointer is 0.
 8. Jump back to the matching opener if the cell at the pointer is nonzero.
 
-> *Use a [URL encode](https://www.urlencoder.io) if your configuration contains rare characters like `&` or `%`...*
+> **Note** Use a [URL encode](https://www.urlencoder.io) if your configuration contains rare characters like `&` or `%`...
 
 For comparison here is the defaults configuration:
 
